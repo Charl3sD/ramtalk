@@ -1,0 +1,42 @@
+{
+  "name": "ramtalk",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build && node scripts/third-party-licenses.mjs",
+    "preview": "vite preview --host",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "test": "vitest run",
+    "test:e2e": "playwright test"
+  },
+  "license": "MIT",
+  "description": "Serverless, proximity-paired, end-to-end encrypted two-person chat PWA",
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@sveltejs/vite-plugin-svelte": "^5.1.1",
+    "@tsconfig/svelte": "^5.0.8",
+    "@types/jsdom": "^30.0.0",
+    "@types/markdown-it": "^14.2.0",
+    "@types/qrcode": "^1.5.6",
+    "@vitejs/plugin-basic-ssl": "^2.3.0",
+    "jsdom": "^27.0.1",
+    "svelte-check": "^4.7.6",
+    "typescript": "^5.9.3",
+    "vite": "^6.4.4",
+    "vite-plugin-pwa": "^2.0.0",
+    "vitest": "^3.2.7"
+  },
+  "dependencies": {
+    "dompurify": "^3.4.17",
+    "emoji-picker-element": "^1.29.1",
+    "emoji-picker-element-data": "^1.8.0",
+    "markdown-it": "^15.0.2",
+    "markdown-it-emoji": "^3.1.0",
+    "qr-scanner": "^1.4.2",
+    "qrcode": "^1.5.4",
+    "svelte": "^5.57.2"
+  },
+  "private": true,
+  "type": "module",
+  "author": "Charles"
+}
